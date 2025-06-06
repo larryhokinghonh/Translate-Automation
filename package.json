@@ -1,0 +1,26 @@
+{
+	"name": "my-app",
+	"version": "1.0.0",
+	"scripts": {
+		"extract": "ts-node scripts/extract.ts",
+		"merge": "ts-node scripts/merge.ts",
+		"translate": "ts-node scripts/translate.ts",
+		"all": "npm run extract && npm run merge && npm run translate && prettier --write locales/*.json"
+	},
+	"dependencies": {
+		"@babel/parser": "^7.21.8",
+		"@babel/traverse": "^7.21.4",
+		"aws-sdk": "^2.1362.0",
+		"comment-json": "^4.2.4",
+		"dotenv": "^16.5.0",
+		"fast-glob": "^3.2.7",
+		"p-queue": "^6.0.2"
+	},
+	"devDependencies": {
+		"@types/babel__parser": "^7.0.0",
+		"@types/babel__traverse": "^7.20.7",
+		"prettier": "^2.7.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.4"
+	}
+}
