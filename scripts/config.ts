@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 export interface I18nConfig {
 	sourceGlobs: string[]; 						   
 	tempKeysPath: string; 						   
